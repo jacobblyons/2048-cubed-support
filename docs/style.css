@@ -1,0 +1,64 @@
+:root {
+  --bg: #2e3037;
+  --bg-deep: #26282e;
+  --cream: #ebe5ce;
+  --red: #b24c36;
+  --gold: #f5d278;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--cream);
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 17px;
+  line-height: 1.65;
+}
+h1, h2, h3, .pixel {
+  font-family: "Press Start 2P", "Courier New", monospace;
+  line-height: 1.5;
+}
+h1 { font-size: 26px; margin: 0.2em 0; }
+h2 { font-size: 16px; color: var(--gold); margin-top: 2.2em; }
+a { color: var(--gold); }
+.wrap { max-width: 860px; margin: 0 auto; padding: 32px 20px 80px; }
+header.hero { text-align: center; padding: 56px 20px 8px; }
+.hero img.icon {
+  width: 120px; height: 120px; border-radius: 26px;
+  image-rendering: pixelated;
+  border: 3px solid var(--cream);
+  box-shadow: 8px 10px 0 rgba(0,0,0,.35);
+}
+.tagline { color: var(--gold); font-size: 13px; letter-spacing: 1px; }
+.card {
+  background: var(--bg-deep);
+  border: 3px solid var(--cream);
+  border-radius: 14px;
+  box-shadow: 8px 10px 0 rgba(0,0,0,.35);
+  padding: 24px 28px;
+  margin: 28px 0;
+}
+.shots { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin: 40px 0; }
+.shots img {
+  width: 210px; border-radius: 10px;
+  border: 2px solid var(--cream);
+  box-shadow: 6px 8px 0 rgba(0,0,0,.35);
+}
+ul { padding-left: 1.2em; }
+li { margin: 0.45em 0; }
+footer { text-align: center; color: rgba(235,229,206,.45); font-size: 13px; margin-top: 64px; }
+footer a { color: rgba(235,229,206,.6); }
+.suits { font-size: 22px; letter-spacing: 8px; }
+.suits .r { color: var(--red); }
+nav { text-align: center; font-size: 12px; margin-top: 18px; }
+nav a { margin: 0 12px; }
+.badge {
+  display: inline-block; margin-top: 24px; padding: 14px 22px;
+  background: var(--cream); color: var(--bg); text-decoration: none;
+  font-family: "Press Start 2P", monospace; font-size: 12px;
+  border-radius: 10px; box-shadow: 0 5px 0 #bab296, 0 9px 12px rgba(0,0,0,.35);
+}
+
+nav.langs { margin-top: 14px; font-size: 11px; line-height: 2.2; }
+nav.langs a { margin: 0 7px; color: rgba(235,229,206,.45); text-decoration: none; }
+nav.langs a:hover { color: var(--gold); }
